@@ -17,6 +17,8 @@
                     result = secBig(0.123, 0.0123123, 0)
                     self.assertEqual(result, 0.0123123) -> True
 
+                    result = secBig("hello", 0.0123123, 0) -> "Error, enter valid numbers"
+
         Purpose:    Find the second-largest number given 3 numbers
 
     2)
@@ -37,6 +39,8 @@
                     result = cap("nOne")
                     self.assertEqual(result, False) -> True
 
+                    result = cap(21) -> "Enter a valid string"
+
         Purpose:    Return true if there are no capital letters in a string
 
     3)
@@ -56,6 +60,8 @@
 
                     result = north("New York", "New Mexico")
                     self.assertEqual(result, "New York") -> True
+
+                    result = north("China", "Japan") -> "Enter valid states"
 
         Purpose:    Find the North Most state
 """
